@@ -1,0 +1,7 @@
+func AttachLocation(
+	ctx context.Context,
+	getter ResourceGetter,
+	connInfo client.ConnectionInfoGetter,
+	name string,
+	opts *api.PodAttachOptions,
+) (*url.URL, http.RoundTripper, error)
